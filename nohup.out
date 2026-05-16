@@ -99,3 +99,4 @@ Traceback (most recent call last):
   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 461, in __setitem__
     raise StreamlitAPIException(
 streamlit.errors.StreamlitAPIException: `st.session_state.compare_disease` cannot be modified after the widget with key `compare_disease` is instantiated.
+2026-05-16 06:49:28.202 An update to the [server] config option section was detected. To have these changes be reflected, please restart streamlit.
