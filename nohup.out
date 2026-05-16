@@ -100,3 +100,25 @@ Traceback (most recent call last):
     raise StreamlitAPIException(
 streamlit.errors.StreamlitAPIException: `st.session_state.compare_disease` cannot be modified after the widget with key `compare_disease` is instantiated.
 2026-05-16 06:49:28.202 An update to the [server] config option section was detected. To have these changes be reflected, please restart streamlit.
+2026-05-16 06:50:34.765 304 GET /static/js/6013.299d692d.chunk.js (::1) 0.43ms
+2026-05-16 06:50:34.768 304 GET /component/streamlit_mic_recorder.streamlit_mic_recorder/index.html?streamlitUrl=http%3A%2F%2Flocalhost%3A8501%2F (::1) 0.72ms
+2026-05-16 06:50:34.781 304 GET /component/streamlit_mic_recorder.streamlit_mic_recorder/static/js/main.010058c4.js (::1) 1.17ms
+2026-05-16 06:50:34.785 304 GET /component/streamlit_mic_recorder.streamlit_mic_recorder/bootstrap.min.css (::1) 3.82ms
+2026-05-16 06:50:34.786 304 GET /component/streamlit_mic_recorder.streamlit_mic_recorder/static/css/main.27af0a20.css (::1) 3.38ms
+2026-05-16 06:50:51.579 304 GET /static/js/8570.6de19120.chunk.js (::1) 0.28ms
+2026-05-16 06:50:51.580 304 GET /static/js/4666.ad225eae.chunk.js (::1) 0.44ms
+2026-05-16 06:50:51.580 304 GET /static/js/4132.49bf3f2c.chunk.js (::1) 0.41ms
+2026-05-16 06:50:51.580 304 GET /static/js/7602.7e796651.chunk.js (::1) 0.83ms
+2026-05-16 06:50:51.581 304 GET /static/js/5117.04bfe5d3.chunk.js (::1) 0.38ms
+2026-05-16 06:51:22.781 An update to the [server] config option section was detected. To have these changes be reflected, please restart streamlit.
+2026-05-16 06:51:22.783 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
