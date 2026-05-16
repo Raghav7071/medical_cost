@@ -1,0 +1,101 @@
+2026-05-16 06:30:32.641 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8502
+  Network URL: http://10.254.201.192:8502
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.4.3)/charset_normalizer (3.4.5) doesn't match a supported version!
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/util.py:227: RuntimeWarning: coroutine 'expire_cache' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/util.py:227: RuntimeWarning: coroutine 'expire_cache' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+  Stopping...
+2026-05-16 06:33:14.108 
+Warning: the config option 'server.enableCORS=false' is not compatible with 'server.enableXsrfProtection=true'.
+As a result, 'server.enableCORS' is being overridden to 'true'.
+
+More information:
+In order to protect against CSRF attacks, we send a cookie with each request.
+To do so, we must specify allowable origins, which places a restriction on
+cross-origin resource sharing.
+
+If cross origin resource sharing is required, please disable server.enableXsrfProtection.
+            
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.254.201.192:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/util.py:227: RuntimeWarning: coroutine 'expire_cache' was never awaited
+  pass
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/util.py:227: RuntimeWarning:
+
+coroutine 'expire_cache' was never awaited
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning:
+
+urllib3 (2.6.3) or chardet (7.4.3)/charset_normalizer (3.4.5) doesn't match a supported version!
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/util.py:227: RuntimeWarning:
+
+coroutine 'expire_cache' was never awaited
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/util.py:227: RuntimeWarning:
+
+coroutine 'expire_cache' was never awaited
+
+2026-05-16 06:38:07.594 Uncaught app exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 542, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/raghavyadav/Medical_to/app.py", line 194, in <module>
+    packages.render()
+  File "/Users/raghavyadav/Medical_to/views/packages.py", line 12, in render
+    show_comparison()
+  File "/Users/raghavyadav/Medical_to/views/packages.py", line 21, in show_comparison
+    st.session_state.compare_disease = disease
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 125, in __setattr__
+    self[key] = value
+    ~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/runtime/state/session_state_proxy.py", line 103, in __setitem__
+    get_session_state()[key] = value
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/runtime/state/safe_session_state.py", line 98, in __setitem__
+    self._state[key] = value
+    ~~~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/runtime/state/session_state.py", line 461, in __setitem__
+    raise StreamlitAPIException(
+streamlit.errors.StreamlitAPIException: `st.session_state.compare_disease` cannot be modified after the widget with key `compare_disease` is instantiated.
